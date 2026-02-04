@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Engineering Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">DEV<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="cv-btn">Download CV</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <span class="badge">1st Year BTech Student</span>
+            <h1>Crafting Digital <br><span class="red-text">Experiences.</span></h1>
+            <p>I'm [YOUR NAME]. I specialize in solving complex problems through clean code and engineering principles.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View Portfolio</a>
+                <a href="https://wa.me/[YOUR_NUMBER]" class="btn-secondary">WhatsApp Me</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="tech-stack">
+        <div class="marquee">
+            <span>C++ • PYTHON • JAVASCRIPT • HTML • CSS • JAVA • REACT • SQL • DATA STRUCTURES • </span>
+            <span>C++ • PYTHON • JAVASCRIPT • HTML • CSS • JAVA • REACT • SQL • DATA STRUCTURES • </span>
+        </div>
+    </div>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-card">
+                <span class="tag">Engineering</span>
+                <h3>[PROJECT NAME 1]</h3>
+                <p>A high-level description of your project. Focus on the 'Why' and 'How'.</p>
+                <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> Source</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <span class="tag">Development</span>
+                <h3>[PROJECT NAME 2]</h3>
+                <p>Describe your technical contribution and the technologies utilized.</p>
+                <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> Source</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="youtube" class="section">
+        <h2 class="section-title">Latest from <span>YouTube</span></h2>
+        <div class="yt-container">
+            <div class="yt-info">
+                <p>Sharing tech tutorials and my engineering journey.</p>
+                <a href="#" class="yt-subscribe-btn"><i class="fab fa-youtube"></i> Subscribe</a>
+            </div>
+            <div class="yt-grid">
+                <div class="yt-video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video">
+                        <div class="play-overlay"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>[Video Title 1]</h3>
+                </div>
+                <div class="yt-video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video">
+                        <div class="play-overlay"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h3>[Video Title 2]</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section">
+        <h2 class="section-title">Beyond <span>Coding</span></h2>
+        <div class="hobbies-grid">
+            <div class="hobby-item">
+                <i class="fas fa-camera"></i>
+                <h4>Photography</h4>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-chess"></i>
+                <h4>Chess</h4>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-music"></i>
+                <h4>Music</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-box">
+            <h2>Get In <span>Touch</span></h2>
+            <p>Available for collaborations and technical discussions.</p>
+            <div class="contact-grid">
+                <a href="https://wa.me/[NUMBER]" class="contact-card wa"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/[ID]" class="contact-card insta"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:[EMAIL]" class="contact-card mail"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [YOUR NAME]. Engineered with Code.</p>
+    </footer>
+
+</body>
+</html>

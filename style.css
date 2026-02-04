@@ -1,0 +1,232 @@
+:root {
+    --bg: #050505;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+    --red: #ff3c3c;
+    --white: #ffffff;
+    --gray: #888;/* Fix for the Innovate text */
+.red-text {
+    color: #ff3c3c !important; /* Using your red variable color */
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Optional: Add a subtle glow to make it "Pop" like a cinematic title */
+.red-text {
+    text-shadow: 0 0 20px rgba(255, 60, 60, 0.4);
+}
+
+}
+
+/* Base Styles */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.bg-glow {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% -20%, #301010, transparent 45%);
+    z-index: -1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 10px; }
+
+/* Navbar */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; position: sticky; top: 0;
+    background: rgba(5, 5, 5, 0.85); backdrop-filter: blur(15px);
+    z-index: 1000; border-bottom: 1px solid var(--border);
+}
+.logo { font-size: 1.4rem; font-weight: 800; color: var(--white); text-decoration: none; }
+.logo span { color: var(--red); }
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links a { text-decoration: none; color: var(--gray); font-size: 0.9rem; transition: 0.3s; }
+.nav-links a:hover { color: var(--red); }
+.cv-btn { padding: 8px 20px; border: 1px solid var(--red); color: var(--red); text-decoration: none; border-radius: 6px; transition: 0.3s; font-size: 0.9rem; }
+.cv-btn:hover { background: var(--red); color: white; box-shadow: 0 0 15px rgba(255, 60, 60, 0.3); }
+
+/* Hero */
+/* REPLACE YOUR OLD HERO CSS WITH THIS */
+/* Engineering Badge with Red Border */
+.badge-eng {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 2px solid var(--red); /* That specific red border you liked */
+    color: var(--red);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 4px; /* Slightly squared for a more technical feel */
+    margin-bottom: 20px;
+    background: rgba(230, 36, 41, 0.05); /* Very subtle red tint */
+}
+
+.hero-text p {
+    max-width: 600px;
+    line-height: 1.6;
+    color: #ccc;
+    font-size: 1.1rem;
+    margin: 20px 0 30px 0;
+}
+
+.hero-text p strong {
+    color: #fff; /* Makes 'coding' and 'problems' pop */
+}
+.hero { 
+    height: 90vh; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 8%; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.hero-text {
+    position: relative;
+    z-index: 10; /* Lifts the text above the background */
+}
+
+.hero h1 { 
+    font-size: 5.5rem; 
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+}
+
+.hero-btns { 
+    display: flex;
+    gap: 20px;
+    position: relative; 
+    z-index: 20; /* Lifts buttons to the very top layer */
+}
+
+/* Hover effect for the Primary Button (Red) */
+/* This makes the links look like solid blocks/buttons */
+.btn-primary, .btn-secondary { 
+    display: inline-block;    /* CRITICAL: Allows padding/height to work */
+    padding: 14px 32px;       /* Size of the button */
+    text-decoration: none;    /* Removes the underline */
+    border-radius: 8px;       /* Rounded corners */
+    font-weight: 700;         /* Bold text */
+    font-size: 1.1rem;        /* Text size */
+    transition: 0.3s ease;    /* Smooth hover effect */
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Primary Button (Solid Red like YouTube) */
+.btn-primary { 
+    background-color: #ff0000; 
+    color: #ffffff; 
+    border: none;
+    margin-right: 15px;
+}
+
+/* Secondary Button (Outlined/Cinematic) */
+.btn-secondary { 
+    background-color: transparent; 
+    color: #ffffff; 
+    border: 2px solid #ffffff; 
+}
+
+/* HOVER EFFECTS */
+.btn-primary:hover {
+    background-color: #cc0000; /* Darker red on hover */
+    transform: translateY(-3px); /* Lifts up */
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3); /* Red glow */
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #000000; /* Inverts colors on hover */
+    transform: translateY(-3px);
+}   
+/* Tech Marquee */
+.tech-stack { background: #0a0a0a; padding: 25px 0; overflow: hidden; border-y: 1px solid var(--border); }
+.marquee { display: flex; animation: scroll 25s linear infinite; width: max-content; }
+.marquee span { padding: 0 40px; color: var(--gray); font-weight: 800; letter-spacing: 2px; }
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* General Section */
+.section { padding: 100px 8%; }
+.section-title { font-size: 2.8rem; margin-bottom: 50px; }
+.section-title span { color: var(--red); }
+
+/* Project Cards */
+.project-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.project-card { background: var(--card-bg); border: 1px solid var(--border); padding: 40px; border-radius: 20px; transition: 0.4s; }
+.project-card:hover { border-color: var(--red); transform: translateY(-10px); background: rgba(255,255,255,0.05); }
+.tag { color: var(--red); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+.project-card h3 { margin: 15px 0; font-size: 1.5rem; }
+.project-links a { color: var(--red); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+
+/* YouTube */
+
+.yt-container { background: var(--card-bg); border: 1px solid var(--border); padding: 40px; border-radius: 24px; }
+.yt-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; flex-wrap: wrap; gap: 20px; }
+.yt-subscribe-btn { padding: 10px 20px; background: #ff0000; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; }
+.yt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.video-thumbnail { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+.video-thumbnail img { width: 70% ;  aspect-ratio: 9/16; display: block; }
+.play-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); font-size: 2.5rem; opacity: 0; transition: 0.3s; }
+.yt-video-card:hover .play-overlay { opacity: 1; color: var(--red); }
+.yt-video-card h3 { font-size: 1rem; margin-top: 15px; color: var(--gray); font-weight: 400; }
+.logo-bg-card {
+    width: 320px;
+    height: 180px;
+    border: 2px solid #e62429;
+    background-color: #000;
+    
+    /* ADD YOUR IMAGE HERE */
+    background-image: url('https://ibb.co/KpNqK9NY');
+    
+    /* This is the magic line that stops it from being 'massive' */
+    background-size: contain; 
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo-bg-card:hover {
+    box-shadow: 0 0 20px rgba(230, 36, 41, 0.4);
+    transform: scale(1.02);
+}
+
+/* Hobbies */
+.hobbies-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.hobby-item { background: var(--card-bg); padding: 35px; border-radius: 20px; text-align: center; border: 1px solid var(--border); transition: 0.3s; }
+.hobby-item i { font-size: 2rem; color: var(--red); margin-bottom: 15px; }
+.hobby-item:hover { border-color: var(--red); transform: scale(1.05); }
+
+/* Contact */
+.contact-box { background: #080808; padding: 60px; border-radius: 30px; text-align: center; border: 1px solid var(--border); }
+.contact-grid { display: flex; justify-content: center; gap: 25px; margin-top: 30px; }
+.contact-card { font-size: 2rem; color: var(--white); transition: 0.3s; }
+.contact-card:hover { color: var(--red); transform: translateY(-5px); }
+
+footer { text-align: center; padding: 40px; color: var(--gray); font-size: 0.9rem; border-top: 1px solid var(--border); }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3rem; }
+    .navbar { padding: 15px 5%; }
+    .nav-links { display: none; }
+}
