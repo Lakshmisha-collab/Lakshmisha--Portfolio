@@ -175,6 +175,16 @@ body {
 .project-links a { color: var(--red); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
 
 /* YouTube */
+/* YouTube Hover Effect */
+.yt-container {
+    transition: 0.4s ease;
+}
+
+.yt-container:hover {
+    border-color: var(--red);
+    box-shadow: 0 0 30px rgba(255, 60, 60, 0.15);
+    transform: translateY(-5px);
+}
 
 .yt-container { background: var(--card-bg); border: 1px solid var(--border); padding: 40px; border-radius: 24px; }
 .yt-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; flex-wrap: wrap; gap: 20px; }
@@ -192,7 +202,7 @@ body {
     background-color: #000;
     
     /* ADD YOUR IMAGE HERE */
-    background-image: url('https://ibb.co/KpNqK9NY');
+    background-image: url('https://ibb.co/KpNqK9NYhttps://yt3.googleusercontent.com/4q2PsShibJaYGqhJ…NPY4CU-8g83K3qv_ahCY4Q=s160-c-k-c0x00ffffff-no-rj');
     
     /* This is the magic line that stops it from being 'massive' */
     background-size: contain; 
@@ -224,9 +234,57 @@ body {
 
 footer { text-align: center; padding: 40px; color: var(--gray); font-size: 0.9rem; border-top: 1px solid var(--border); }
 
+/* Footer GitHub Link */
+.footer-socials {
+    margin-bottom: 15px;
+}
+
+.github-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.github-link:hover {
+    color: var(--red);
+    text-shadow: 0 0 10px rgba(255, 60, 60, 0.5);
+    transform: translateY(-5px); 
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 3rem; }
     .navbar { padding: 15px 5%; }
     .nav-links { display: none; }
+}
+/* Floating Pixels */
+.pixel-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 25;
+}
+
+.pixel {
+    position: sticky;
+    width: 3px;
+    height: 3px;
+    background: var(--white);
+    opacity: 0.3;
+    box-shadow: 0 0 10px var(--red);
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(45deg); opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { transform: translateY(-100vh) rotate(90deg); opacity: 0; }
 }
