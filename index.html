@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<div class="pixel-container" id="pixel-container"></div>
 <body>
 
     <div class="bg-glow"></div>
@@ -62,8 +63,10 @@
             <div class="project-card">
                 <span class="tag">Collaboration</span>
                 <h3>Open for Projects</h3>
+                
                 <p>If you're interested in collaborating, feel free to reach out.</p><span>
-                <a href="https://wa.me/9742040482" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></span>
+                <p> ‎ </p>
+                    <a href="https://wa.me/9742040482" class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></span>
             </div>
         </div>
     </section>
@@ -74,10 +77,16 @@
             <div class="yt-info">
                 <div>
                     <h3>Misteq</h3>
-   <p>Specializing in Marvel and Stranger Things content. From intricate theory breakdowns to high-sync cinematic edits, I bridge the gap between fan speculation and professional visual art</p>
-                </div>
-                <a href="https://youtube.com/@misteq-hr2124" target="_blank" class="yt-subscribe-btn"><i class="fab fa-youtube"></i> Subscribe</a>
+   <p>High-energy Marvel edits</p> 
+<p>Every frame is designed to give goosebumps and that instant “PLAY AGAIN” feeling.</p>
+
+<p> If you love powerful moments, cinematic vibes, and edits that HIT different… you’re home. </p>
+<br>                
+</div>
+                <a href="https://youtube.com/@misteq_edits?si=H6ulwwjmJLUCI17z" target="_blank" class="yt-subscribe-btn"><i class="fab fa-youtube"></i> Subscribe</a>
             </div>
+            </div>
+        <br>
             <!--
             <div class="yt-grid">
                 <a href="https://youtube.com/shorts/jrVTkt9cPw8" target="_blank" class="yt-video-card">
@@ -128,10 +137,25 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2026 Lakshmisha.R. Engineered with Code.</p>
-    </footer>
+<footer>
+    <div class="footer-socials">
+        <a href="https://github.com/dashboard" target="_blank" class="github-link">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+    <p>&copy; 2026 Lakshmisha.R. Engineered with Code.</p>
+</footer>
+<script>
+    const container = document.getElementById('pixel-container');
+    for (let i = 0; i < 50; i++) {
+        const pixel = document.createElement('div');
+        pixel.className = 'pixel';
+        pixel.style.left = Math.random() * 100 + 'vw';
+        pixel.style.top = Math.random() * 100 + 'vh';
+        pixel.style.animationDelay = Math.random() * 5 + 's';
+        container.appendChild(pixel);
+    }
+</script>
 
 </body>
 </html>
